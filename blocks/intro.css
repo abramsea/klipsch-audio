@@ -35,6 +35,13 @@
     max-width: 100%;
 }
 
+.intro__pic {
+    display: none;
+}
+
+.intro__image {
+    display: none;
+}
 
 .intro__links {
     padding: 90px 0 130px 0;
@@ -89,6 +96,18 @@
 
     .intro__link {
         font-size: 14px;
+    }
+
+    .intro__video {
+        display: none;
+    }
+
+    .intro__pic {
+        display: block;
+    }
+    
+    .intro__image {
+        display: block;
     }
 
 }
