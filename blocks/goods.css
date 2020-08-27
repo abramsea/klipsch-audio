@@ -1,0 +1,80 @@
+.goods {
+    padding: 60px 0;
+}
+
+.goods__box {
+    margin: 72px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0 0 40px 0;
+    
+}
+
+.goods__box + .goods__box {
+    margin: 20px auto;
+}
+
+.goods__box_two-products {
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.goods__box_one-product {
+    grid-template-columns: 1fr;
+}
+
+.goods__overview {
+    display: flex;
+    justify-content: center;
+}
+
+.goods__overview-button {
+    margin: 40px 0 0 0;
+    padding: 8px 32px;
+    border: 1px solid #000;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+    transition: all .3s;
+    display: block;
+    max-width: 164px;
+}
+
+.goods__overview-button:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+
+
+@media screen and (max-width: 1049px) {
+    .goods__box {
+        margin: 52px auto 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .goods {
+        padding: 40px 0;
+    }
+
+    .goods__box {
+        margin: 40px auto 0 auto;
+        padding: 0 0 20px 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .goods__box {
+        margin: 40px auto 0 auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #shelf .goods__box, #central .goods__box {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    
+}
